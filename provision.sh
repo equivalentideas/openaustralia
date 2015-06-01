@@ -10,16 +10,16 @@ curl -sSL https://get.docker.com/ | sh
 
 # Below refactored out to docker.sh
 # Pull the latest docker images (should be tagged?)
-# sudo docker pull leowmjw/oa-ubuntu-trusty-db
+sudo docker pull leowmjw/oa-ubuntu-trusty-db
 
 # Turn on the MySQL DB (MySQL 5.5 on Ubuntu 14.04)
-# sudo docker run -d -i -t -p 3306:3306 leowmjw/oa-ubuntu-trusty-db /run.sh
+sudo docker run -d -i -t -p 3306:3306 leowmjw/oa-ubuntu-trusty-db /run.sh
 
 # Pull the latest docker images (should be tagged?)
-# sudo docker pull leowmjw/oa-ubuntu-10.04-web
+sudo docker pull leowmjw/oa-ubuntu-10.04-web
 
 # Turn on the Apache server (Ubuntu 10.04)
-# docker run -d -i -t -p 80:80 leowmjw/oa-ubuntu-10.04-web /run.sh
+docker run -d -i -t -p 80:80 leowmjw/oa-ubuntu-10.04-web /run.sh
 
 # Future: Turn on the parser container
 
