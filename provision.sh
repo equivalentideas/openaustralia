@@ -2,11 +2,11 @@
 
 # Inspired by --> https://github.com/hnakamur/vagrant-ubuntu-docker-shell-provision-example/
 
-# Installing docker for Debian7 by --> https://coderwall.com/p/wlhavw
-echo deb http://get.docker.io/ubuntu docker main | sudo tee /etc/apt/sources.list.d/docker.list
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-sudo apt-get update -y
-sudo apt-get install -y lxc-docker
+# Installing docker for Debian7 by --> http://docs.docker.com/installation/debian/#debian-wheezystable-7x-64-bit
+echo deb http://http.debian.net/debian wheezy-backports main | sudo tee /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install -t wheezy-backports linux-image-amd64
+curl -sSL https://get.docker.com/ | sh
 
 # Below refactored out to docker.sh
 # Pull the latest docker images (should be tagged?)
