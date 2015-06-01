@@ -4,6 +4,7 @@
 
 # Installing docker for Debian7 by --> http://docs.docker.com/installation/debian/#debian-wheezystable-7x-64-bit
 echo deb http://http.debian.net/debian wheezy-backports main | sudo tee /etc/apt/sources.list
+echo deb http://http.debian.net/debian wheezy main | sudo tee /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install -t wheezy-backports linux-image-amd64
 curl -sSL https://get.docker.com/ | sh
